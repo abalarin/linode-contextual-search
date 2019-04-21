@@ -1,0 +1,2763 @@
+{
+  "entities": {
+    "linode/backup#action": {
+      "automatically_extensible": false,
+      "data": [
+        {
+          "synonyms": [
+            "new snapshot",
+            "create snapshot",
+            "snapshot"
+          ],
+          "value": "take snapshot"
+        },
+        {
+          "synonyms": [
+            "restore backup"
+          ],
+          "value": "restore"
+        },
+        {
+          "synonyms": [
+            "clear snapshot",
+            "destroy snapshot"
+          ],
+          "value": "remove snapshot"
+        }
+      ],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    },
+    "linode/backup#status": {
+      "automatically_extensible": false,
+      "data": [
+        {
+          "synonyms": [
+            "enable backups",
+            "with backups",
+            "backups",
+            "backups enabled"
+          ],
+          "value": "enabled"
+        },
+        {
+          "synonyms": [
+            "disable backups",
+            "without backups",
+            "no backups",
+            "backups disabled"
+          ],
+          "value": "disabled"
+        }
+      ],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    },
+    "linode/backups#status": {
+      "automatically_extensible": true,
+      "data": [],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    },
+    "linode/distro": {
+      "automatically_extensible": false,
+      "data": [
+        {
+          "synonyms": [
+            "alpine 3.9"
+          ],
+          "value": "alpine"
+        },
+        {
+          "synonyms": [
+            "arch linux"
+          ],
+          "value": "arch"
+        },
+        {
+          "synonyms": [],
+          "value": "centos 6.8"
+        },
+        {
+          "synonyms": [
+            "centos 7"
+          ],
+          "value": "centos"
+        },
+        {
+          "synonyms": [
+            "coreos container linux",
+            "container linux"
+          ],
+          "value": "coreos"
+        },
+        {
+          "synonyms": [
+            "jessie",
+            "debian jessie"
+          ],
+          "value": "debian 8"
+        },
+        {
+          "synonyms": [
+            "debian 9",
+            "stretch",
+            "debian stretch"
+          ],
+          "value": "debian"
+        },
+        {
+          "synonyms": [],
+          "value": "fedora 27"
+        },
+        {
+          "synonyms": [],
+          "value": "fedora 28"
+        },
+        {
+          "synonyms": [
+            "fedora 29"
+          ],
+          "value": "fedora"
+        },
+        {
+          "synonyms": [],
+          "value": "gentoo"
+        },
+        {
+          "synonyms": [
+            "opensuse leap 42.3"
+          ],
+          "value": "opensuse"
+        },
+        {
+          "synonyms": [
+            "opensuse leap 15.0"
+          ],
+          "value": "opensuse"
+        },
+        {
+          "synonyms": [],
+          "value": "slackware"
+        },
+        {
+          "synonyms": [
+            "trusty",
+            "trusty tahr",
+            "ubuntu trusty",
+            "ubuntu trust tahr"
+          ],
+          "value": "ubuntu 14.04 lts"
+        },
+        {
+          "synonyms": [
+            "xenial",
+            "ubuntu xenial xerus",
+            "xenial xerus"
+          ],
+          "value": "ubuntu 16.04 lts"
+        },
+        {
+          "synonyms": [
+            "ubuntu 18.04 lts",
+            "ubuntu lts",
+            "ubuntu bionic beaver",
+            "bionic beaver"
+          ],
+          "value": "ubuntu"
+        },
+        {
+          "synonyms": [
+            "ubuntu 18.10",
+            "ubuntu latest",
+            "latest ubuntu"
+          ],
+          "value": "ubuntu"
+        }
+      ],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    },
+    "linode/image/label": {
+      "automatically_extensible": true,
+      "data": [],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    },
+    "linode/label": {
+      "automatically_extensible": true,
+      "data": [],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    },
+    "linode/power": {
+      "automatically_extensible": false,
+      "data": [
+        {
+          "synonyms": [
+            "rebooted",
+            "restart"
+          ],
+          "value": "reboot"
+        },
+        {
+          "synonyms": [
+            "turn off",
+            "power down",
+            "turn down",
+            "shut off"
+          ],
+          "value": "power off powered off"
+        },
+        {
+          "synonyms": [
+            "turn on",
+            "powered on",
+            "wake up",
+            "boot"
+          ],
+          "value": "power on"
+        }
+      ],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    },
+    "linode/region": {
+      "automatically_extensible": false,
+      "data": [
+        {
+          "synonyms": [
+            "us central",
+            "dallas",
+            "texas"
+          ],
+          "value": "us-central"
+        },
+        {
+          "synonyms": [
+            "fremont",
+            "california",
+            "us west"
+          ],
+          "value": "us-west"
+        },
+        {
+          "synonyms": [
+            "atlanta",
+            "us southeast"
+          ],
+          "value": "us-southeast"
+        },
+        {
+          "synonyms": [
+            "us east",
+            "newark"
+          ],
+          "value": "us-east"
+        },
+        {
+          "synonyms": [
+            "london",
+            "eu west",
+            "europe west"
+          ],
+          "value": "eu-west"
+        },
+        {
+          "synonyms": [
+            "asia pacific south",
+            "south asia",
+            "singapore"
+          ],
+          "value": "ap-south"
+        },
+        {
+          "synonyms": [
+            "eu central",
+            "europe central",
+            "central europe",
+            "frankfurt",
+            "germany"
+          ],
+          "value": "eu-central"
+        },
+        {
+          "synonyms": [
+            "asia pacific northeast",
+            "asia pacific north east",
+            "japan",
+            "asia"
+          ],
+          "value": "ap-northeast"
+        }
+      ],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    },
+    "linode/type": {
+      "automatically_extensible": false,
+      "data": [
+        {
+          "synonyms": [
+            "1gb"
+          ],
+          "value": "1 GB"
+        },
+        {
+          "synonyms": [
+            "2gb",
+            "nanode"
+          ],
+          "value": "2 GB"
+        },
+        {
+          "synonyms": [
+            "4gb"
+          ],
+          "value": "4 GB"
+        },
+        {
+          "synonyms": [
+            "8gb"
+          ],
+          "value": "8 GB"
+        },
+        {
+          "synonyms": [
+            "16gb"
+          ],
+          "value": "16 GB"
+        },
+        {
+          "synonyms": [
+            "32gb"
+          ],
+          "value": "32 GB"
+        },
+        {
+          "synonyms": [
+            "64gb"
+          ],
+          "value": "64 GB"
+        },
+        {
+          "synonyms": [
+            "96gb"
+          ],
+          "value": "96 GB"
+        },
+        {
+          "synonyms": [
+            "128gb"
+          ],
+          "value": "128 GB"
+        },
+        {
+          "synonyms": [
+            "192gb"
+          ],
+          "value": "192 GB"
+        },
+        {
+          "synonyms": [
+            "4gb"
+          ],
+          "value": "4 GB"
+        },
+        {
+          "synonyms": [
+            "8gb"
+          ],
+          "value": "8 GB"
+        },
+        {
+          "synonyms": [
+            "16gb"
+          ],
+          "value": "16 GB"
+        },
+        {
+          "synonyms": [
+            "32gb"
+          ],
+          "value": "32 GB"
+        },
+        {
+          "synonyms": [
+            "64gb"
+          ],
+          "value": "64 GB"
+        },
+        {
+          "synonyms": [
+            "96gb"
+          ],
+          "value": "96 GB"
+        },
+        {
+          "synonyms": [
+            "24gb"
+          ],
+          "value": "24 GB"
+        },
+        {
+          "synonyms": [
+            "48gb"
+          ],
+          "value": "48 GB"
+        },
+        {
+          "synonyms": [
+            "90gb"
+          ],
+          "value": "90 GB"
+        },
+        {
+          "synonyms": [
+            "150gb"
+          ],
+          "value": "150 GB"
+        },
+        {
+          "synonyms": [
+            "300gb"
+          ],
+          "value": "300 GB"
+        }
+      ],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    },
+    "linode/volume#action": {
+      "automatically_extensible": false,
+      "data": [
+        {
+          "synonyms": [
+            "deploy",
+            "new",
+            "add"
+          ],
+          "value": "create"
+        },
+        {
+          "synonyms": [],
+          "value": "attach"
+        },
+        {
+          "synonyms": [
+            "remove"
+          ],
+          "value": "detach"
+        },
+        {
+          "synonyms": [
+            "destroy"
+          ],
+          "value": "delete"
+        },
+        {
+          "synonyms": [
+            "copy",
+            "duplicate"
+          ],
+          "value": "clone"
+        }
+      ],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    },
+    "snips/number": {},
+    "volume/label": {
+      "automatically_extensible": true,
+      "data": [
+        {
+          "synonyms": [],
+          "value": "foo"
+        },
+        {
+          "synonyms": [],
+          "value": "bar"
+        },
+        {
+          "synonyms": [],
+          "value": "my-volumes"
+        },
+        {
+          "synonyms": [],
+          "value": "this_volume"
+        },
+        {
+          "synonyms": [],
+          "value": "my-volume-123"
+        },
+        {
+          "synonyms": [],
+          "value": "volume1"
+        }
+      ],
+      "matching_strictness": 1.0,
+      "use_synonyms": false
+    }
+  },
+  "intents": {
+    "linode/backup": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "entity": "linode/backup#status",
+              "slot_name": "backupStatus",
+              "text": "enable backups"
+            },
+            {
+              "text": " for "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "linode/backup#status",
+              "slot_name": "backupStatus",
+              "text": "disable backups"
+            },
+            {
+              "text": " for "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "linode/backup#status",
+              "slot_name": "backupStatus",
+              "text": "enable backups"
+            },
+            {
+              "text": " on "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "linode/backup#status",
+              "slot_name": "backupStatus",
+              "text": "enable backups"
+            },
+            {
+              "text": " on linode "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "linode/backup#status",
+              "slot_name": "backupStatus",
+              "text": "disable backups"
+            },
+            {
+              "text": " on linode named "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "linode/backup#status",
+              "slot_name": "backupStatus",
+              "text": "no backups"
+            },
+            {
+              "text": " for linode labelled "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "bar"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "take a "
+            },
+            {
+              "entity": "linode/backup#action",
+              "slot_name": "action",
+              "text": "snapshot"
+            },
+            {
+              "text": " of "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "new "
+            },
+            {
+              "entity": "linode/backup#action",
+              "slot_name": "action",
+              "text": "snapshot"
+            },
+            {
+              "text": " of "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "db1"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "linode/backup#action",
+              "slot_name": "action",
+              "text": "clear snapshot"
+            },
+            {
+              "text": " of "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "linode/backup#action",
+              "slot_name": "action",
+              "text": "restore backup"
+            },
+            {
+              "text": " of "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "backup schedule for "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "show backup schedule for "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "linode/backup#status",
+              "slot_name": "backupStatus",
+              "text": "enabled backups"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "take "
+            },
+            {
+              "entity": "linode/backup#action",
+              "slot_name": "action",
+              "text": "snapshot"
+            }
+          ]
+        }
+      ]
+    },
+    "linode/console": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "server"
+            },
+            {
+              "text": " console"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "server"
+            },
+            {
+              "text": " lish"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "server"
+            },
+            {
+              "text": " glish"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "open lish for "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "db3"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "open glish for "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "db3"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "open console for "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "db23"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "glish"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "console"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "lish"
+            }
+          ]
+        }
+      ]
+    },
+    "linode/create": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "Create "
+            },
+            {
+              "entity": "linode/type",
+              "slot_name": "type",
+              "text": "2GB"
+            },
+            {
+              "text": " Linode in "
+            },
+            {
+              "entity": "linode/region",
+              "slot_name": "region",
+              "text": "dallas"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Create "
+            },
+            {
+              "entity": "linode/type",
+              "slot_name": "type",
+              "text": "24GB"
+            },
+            {
+              "text": " Linode in "
+            },
+            {
+              "entity": "linode/region",
+              "slot_name": "region",
+              "text": "newark"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Create a Linode "
+            },
+            {
+              "entity": "linode/type",
+              "slot_name": "type",
+              "text": "4gb"
+            },
+            {
+              "text": " in "
+            },
+            {
+              "entity": "linode/region",
+              "slot_name": "region",
+              "text": "newark"
+            },
+            {
+              "text": " "
+            },
+            {
+              "entity": "linode/backups#status",
+              "slot_name": "backups",
+              "text": "with backups enabled"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Create a "
+            },
+            {
+              "entity": "linode/type",
+              "slot_name": "type",
+              "text": "4gb"
+            },
+            {
+              "text": " linode in "
+            },
+            {
+              "entity": "linode/region",
+              "slot_name": "region",
+              "text": "tokyo"
+            },
+            {
+              "text": " named "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "label",
+              "text": "foo"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Create a "
+            },
+            {
+              "entity": "linode/type",
+              "slot_name": "type",
+              "text": "nanode"
+            },
+            {
+              "text": " in "
+            },
+            {
+              "entity": "linode/region",
+              "slot_name": "region",
+              "text": "us east"
+            },
+            {
+              "text": " called "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "label",
+              "text": "app-server"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Create an Linode "
+            },
+            {
+              "entity": "linode/type",
+              "slot_name": "type",
+              "text": "300gb"
+            },
+            {
+              "text": " named "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "label",
+              "text": "bla"
+            },
+            {
+              "text": " in "
+            },
+            {
+              "entity": "linode/region",
+              "slot_name": "region",
+              "text": "tokyo"
+            },
+            {
+              "text": " "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "label",
+              "text": "with backups enabled"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Deploy an "
+            },
+            {
+              "entity": "linode/type",
+              "slot_name": "type",
+              "text": "8gb"
+            },
+            {
+              "text": " linode in "
+            },
+            {
+              "entity": "linode/region",
+              "slot_name": "region",
+              "text": "tokyo"
+            },
+            {
+              "text": " "
+            },
+            {
+              "entity": "linode/backups#status",
+              "slot_name": "backups",
+              "text": "with backups"
+            },
+            {
+              "text": " named "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "label",
+              "text": "db1"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "deploy "
+            },
+            {
+              "entity": "linode/type",
+              "slot_name": "type",
+              "text": "nanode"
+            },
+            {
+              "text": " labelled "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "label",
+              "text": "foo"
+            },
+            {
+              "text": " to "
+            },
+            {
+              "entity": "linode/region",
+              "slot_name": "region",
+              "text": "tokyo"
+            },
+            {
+              "text": " "
+            },
+            {
+              "entity": "linode/backups#status",
+              "slot_name": "backups",
+              "text": "with backups"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "deploy a "
+            },
+            {
+              "entity": "linode/type",
+              "slot_name": "type",
+              "text": "nanode"
+            },
+            {
+              "text": " to "
+            },
+            {
+              "entity": "linode/region",
+              "slot_name": "region",
+              "text": "europe central"
+            },
+            {
+              "text": " named "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "label",
+              "text": "app-server"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "create "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "label",
+              "text": "blog"
+            },
+            {
+              "text": " with "
+            },
+            {
+              "entity": "linode/type",
+              "slot_name": "type",
+              "text": "2gb"
+            },
+            {
+              "text": " of ram in "
+            },
+            {
+              "entity": "linode/region",
+              "slot_name": "region",
+              "text": "newark"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "deploy linode "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "label",
+              "text": "example"
+            },
+            {
+              "text": " to "
+            },
+            {
+              "entity": "linode/region",
+              "slot_name": "region",
+              "text": "atlanta"
+            },
+            {
+              "text": " with "
+            },
+            {
+              "entity": "linode/type",
+              "slot_name": "type",
+              "text": "2gb"
+            },
+            {
+              "text": " of ram and "
+            },
+            {
+              "entity": "linode/backups#status",
+              "slot_name": "backups",
+              "text": "backups enabled"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "new "
+            },
+            {
+              "entity": "linode/type",
+              "slot_name": "type",
+              "text": "nanode"
+            },
+            {
+              "text": " in "
+            },
+            {
+              "entity": "linode/region",
+              "slot_name": "region",
+              "text": "newark"
+            },
+            {
+              "text": " "
+            },
+            {
+              "entity": "linode/backups#status",
+              "slot_name": "backups",
+              "text": "with backups"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "new "
+            },
+            {
+              "entity": "linode/type",
+              "slot_name": "type",
+              "text": "2gb"
+            },
+            {
+              "text": " linode in "
+            },
+            {
+              "entity": "linode/region",
+              "slot_name": "region",
+              "text": "tokyo"
+            },
+            {
+              "text": " named "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "label",
+              "text": "foo"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "new linode "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "label",
+              "text": "foo"
+            },
+            {
+              "text": " near "
+            },
+            {
+              "entity": "linode/region",
+              "slot_name": "region",
+              "text": "newark"
+            },
+            {
+              "text": " with "
+            },
+            {
+              "entity": "linode/type",
+              "slot_name": "type",
+              "text": "2gb"
+            },
+            {
+              "text": " ram"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "new linode "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "label",
+              "text": "foo"
+            },
+            {
+              "text": " with "
+            },
+            {
+              "entity": "linode/distro",
+              "slot_name": "distro",
+              "text": "centos"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "create "
+            },
+            {
+              "entity": "linode/type",
+              "slot_name": "type",
+              "text": "nanode"
+            },
+            {
+              "text": " "
+            },
+            {
+              "entity": "linode/distro",
+              "slot_name": "distro",
+              "text": "stretch"
+            },
+            {
+              "text": " in "
+            },
+            {
+              "entity": "linode/region",
+              "slot_name": "region",
+              "text": "newark"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "create linode "
+            },
+            {
+              "entity": "linode/type",
+              "slot_name": "type",
+              "text": "8gb"
+            },
+            {
+              "text": " using "
+            },
+            {
+              "entity": "linode/distro",
+              "slot_name": "distro",
+              "text": "jessie"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "create "
+            },
+            {
+              "entity": "linode/distro",
+              "slot_name": "distro",
+              "text": "stretch"
+            },
+            {
+              "text": " linode "
+            },
+            {
+              "entity": "linode/type",
+              "slot_name": "type",
+              "text": "16gb"
+            }
+          ]
+        }
+      ]
+    },
+    "linode/delete": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "delete linode "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "linode1"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "destroy linode "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "app-server"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "delete "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "my-linode"
+            }
+          ]
+        }
+      ]
+    },
+    "linode/networking": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "my-linode"
+            },
+            {
+              "text": " networking"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "show network settings for "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "get network settings for "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "show ip of "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "what is the ip of "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            },
+            {
+              "text": "?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "what is the ip of linode "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            },
+            {
+              "text": "?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            },
+            {
+              "text": " ip settings"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            },
+            {
+              "text": " ip address"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            },
+            {
+              "text": " network settings"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            },
+            {
+              "text": " network configuration"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            },
+            {
+              "text": " ssh"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "ssh into "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "bar"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "reverse dns for "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "rdns for "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "rdns of "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "reverse dns of "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            },
+            {
+              "text": " reverse dns settings"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "add ip address to "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "add private ip to "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "add ipv6 to "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "get dns resolvers of "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "show dns resolvers for "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "enable ip failover on "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "ip failover on "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            },
+            {
+              "text": " ip failover"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "get ips for "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "get ips of "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "show ips for "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            },
+            {
+              "text": " show ips"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            },
+            {
+              "text": " get ips"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            },
+            {
+              "text": " list ips"
+            }
+          ]
+        }
+      ]
+    },
+    "linode/power": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "entity": "linode/power",
+              "slot_name": "action",
+              "text": "power off"
+            },
+            {
+              "text": " "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "linode/power",
+              "slot_name": "action",
+              "text": "turn off"
+            },
+            {
+              "text": " linode "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "db1"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "linode/power",
+              "slot_name": "action",
+              "text": "power down"
+            },
+            {
+              "text": " this linode"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "linode/power",
+              "slot_name": "action",
+              "text": "boot"
+            },
+            {
+              "text": " "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "app-server"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "linode/power",
+              "slot_name": "action",
+              "text": "restart"
+            },
+            {
+              "text": " "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "app-server"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "linode/power",
+              "slot_name": "action",
+              "text": "reboot"
+            },
+            {
+              "text": " "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "app-server"
+            }
+          ]
+        }
+      ]
+    },
+    "linode/rebuild": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "rebuild "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            },
+            {
+              "text": " with\u00a0"
+            },
+            {
+              "entity": "linode/distro",
+              "slot_name": "distro",
+              "text": "centos"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "recreate "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            },
+            {
+              "text": " using "
+            },
+            {
+              "entity": "linode/distro",
+              "slot_name": "distro",
+              "text": "debian"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "rebuild this linode with "
+            },
+            {
+              "entity": "linode/distro",
+              "slot_name": "distro",
+              "text": "coreos"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "rebuild "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            },
+            {
+              "text": " with "
+            },
+            {
+              "entity": "linode/image/label",
+              "slot_name": "image",
+              "text": "test disk"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "rebuild with "
+            },
+            {
+              "entity": "linode/image/label",
+              "slot_name": "image",
+              "text": "my custom image"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "recreate using "
+            },
+            {
+              "entity": "linode/image/label",
+              "slot_name": "image",
+              "text": "my custom image"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "rebuild from image "
+            },
+            {
+              "entity": "linode/image/label",
+              "slot_name": "image",
+              "text": "lol"
+            }
+          ]
+        }
+      ]
+    },
+    "linode/rename": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "rename "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            },
+            {
+              "text": " to "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "newLabel",
+              "text": "bar"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "rename to "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "newLabel",
+              "text": "foo"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "change label to "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "newLabel",
+              "text": "foo"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "set label to "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "newLabel",
+              "text": "foo"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "set name to "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "newLabel",
+              "text": "bar"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "change name to "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "newLabel",
+              "text": "bar"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "set label of "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            },
+            {
+              "text": " to "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "newLabel",
+              "text": "bar"
+            }
+          ]
+        }
+      ]
+    },
+    "linode/rescue": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "rescue linode "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "rescue "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "rescue this linode"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "reboot in rescue mode"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "reboot "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "app-server"
+            },
+            {
+              "text": " in rescue mode"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "restart "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "db1"
+            },
+            {
+              "text": " in rescue mode"
+            }
+          ]
+        }
+      ]
+    },
+    "linode/reset-password": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "reset root password for "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "db1"
+            },
+            {
+              "text": " reset password"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "forgot password for "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "cant log into "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "db2"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "locked out of "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "my-app-server-123"
+            }
+          ]
+        }
+      ]
+    },
+    "linode/resize": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "resize "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            },
+            {
+              "text": " to "
+            },
+            {
+              "entity": "linode/type",
+              "slot_name": "type",
+              "text": "2gb"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "change "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            },
+            {
+              "text": " to "
+            },
+            {
+              "entity": "linode/type",
+              "slot_name": "type",
+              "text": "4gb"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            },
+            {
+              "text": " resize to "
+            },
+            {
+              "entity": "linode/type",
+              "slot_name": "type",
+              "text": "4gb"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            },
+            {
+              "text": " change size to "
+            },
+            {
+              "entity": "linode/type",
+              "slot_name": "type",
+              "text": "4gb"
+            }
+          ]
+        }
+      ]
+    },
+    "linode/settings": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "advanced settings for "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "show advanced settings for "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "show settings for "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "watchdog settings for "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            },
+            {
+              "text": " watchdog settings"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            },
+            {
+              "text": " settings"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "bar"
+            },
+            {
+              "text": " notifications"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "notification settings for "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "foo"
+            }
+          ]
+        }
+      ]
+    },
+    "linode/summary": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "show linode "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "a-linode"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "go to "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "webserver"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "go to linode "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "webserver"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "graphs for "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "db1"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "nagios"
+            },
+            {
+              "text": " stats"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "nagios"
+            },
+            {
+              "text": " graphs"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "nagios"
+            },
+            {
+              "text": " network usage"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "nagios"
+            },
+            {
+              "text": " details"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "nagios"
+            },
+            {
+              "text": " view"
+            }
+          ]
+        }
+      ]
+    },
+    "volume/attach": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "attach "
+            },
+            {
+              "entity": "volume/label",
+              "slot_name": "volume",
+              "text": "my-volume-123"
+            },
+            {
+              "text": " to "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "bar"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "attach this volume to "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "bar"
+            }
+          ]
+        }
+      ]
+    },
+    "volume/clone": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "clone volume "
+            },
+            {
+              "entity": "volume/label",
+              "slot_name": "volume",
+              "text": "volume1"
+            },
+            {
+              "text": " to "
+            },
+            {
+              "entity": "volume/label",
+              "slot_name": "newLabel",
+              "text": "volume2"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "create volume "
+            },
+            {
+              "entity": "volume/label",
+              "slot_name": "newLabel",
+              "text": "vol2"
+            },
+            {
+              "text": " from "
+            },
+            {
+              "entity": "volume/label",
+              "slot_name": "volume",
+              "text": "original-volume"
+            }
+          ]
+        }
+      ]
+    },
+    "volume/create": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "create volume "
+            },
+            {
+              "entity": "snips/number",
+              "slot_name": "size",
+              "text": "10"
+            },
+            {
+              "text": " "
+            },
+            {
+              "entity": "volume/label",
+              "slot_name": "label",
+              "text": "foo"
+            },
+            {
+              "text": " in "
+            },
+            {
+              "entity": "linode/region",
+              "slot_name": "region",
+              "text": "dallas"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "new "
+            },
+            {
+              "entity": "snips/number",
+              "slot_name": "size",
+              "text": "1100"
+            },
+            {
+              "text": " volume in "
+            },
+            {
+              "entity": "linode/region",
+              "slot_name": "region",
+              "text": "dallas"
+            },
+            {
+              "text": " labelled "
+            },
+            {
+              "entity": "volume/label",
+              "slot_name": "label",
+              "text": "my-volume"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "create "
+            },
+            {
+              "entity": "snips/number",
+              "slot_name": "size",
+              "text": "20"
+            },
+            {
+              "text": " volume "
+            },
+            {
+              "entity": "linode/region",
+              "slot_name": "region",
+              "text": "newark"
+            },
+            {
+              "text": " named "
+            },
+            {
+              "entity": "volume/label",
+              "slot_name": "label",
+              "text": "foo1"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "create volume "
+            },
+            {
+              "entity": "volume/label",
+              "slot_name": "label",
+              "text": "bar"
+            },
+            {
+              "text": " in "
+            },
+            {
+              "entity": "linode/region",
+              "slot_name": "region",
+              "text": "eu east"
+            }
+          ]
+        }
+      ]
+    },
+    "volume/delete": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "delete volume "
+            },
+            {
+              "entity": "volume/label",
+              "slot_name": "volume",
+              "text": "volume1"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "destroy volume "
+            },
+            {
+              "entity": "volume/label",
+              "slot_name": "volume",
+              "text": "vol2"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "delete "
+            },
+            {
+              "entity": "volume/label",
+              "slot_name": "volume",
+              "text": "volume1"
+            }
+          ]
+        }
+      ]
+    },
+    "volume/detach": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "detach volume from "
+            },
+            {
+              "entity": "linode/label",
+              "slot_name": "linode",
+              "text": "bar"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "detach volume "
+            },
+            {
+              "entity": "volume/label",
+              "slot_name": "volume",
+              "text": "db1"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "detach "
+            },
+            {
+              "entity": "volume/label",
+              "slot_name": "volume",
+              "text": "this-is-a-volume"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "language": "en"
+}

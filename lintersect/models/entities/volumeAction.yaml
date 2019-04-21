@@ -1,0 +1,12 @@
+---
+type: entity
+name: linode/volume#action
+automatically_extensible: false
+use_synonyms: true
+matching_strictness: 1.0
+values:
+  - [ create,deploy,new,add ]
+  - [ attach ]
+  - [ detach,remove ]
+  - [ delete,destroy ]
+  - [ clone,copy,duplicate ]

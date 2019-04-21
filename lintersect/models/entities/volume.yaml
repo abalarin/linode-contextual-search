@@ -1,0 +1,13 @@
+---
+type: entity
+name: volume/label
+automatically_extensible: true
+use_synonyms: false
+matching_strictness: 1.0
+values:
+  - foo
+  - bar
+  - my-volumes
+  - this_volume
+  - my-volume-123
+  - volume1

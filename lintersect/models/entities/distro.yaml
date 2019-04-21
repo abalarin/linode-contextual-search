@@ -1,0 +1,25 @@
+---
+type: entity
+name: linode/distro
+automatically_extensible: false
+use_synonyms: true
+matching_strictness: 1.0
+values:
+  - [ alpine,alpine 3.9 ]
+  - [ arch,arch linux ]
+  - [ centos 6.8 ]
+  - [ centos,centos 7 ]
+  - [ coreos,coreos container linux,container linux ]
+  - [ debian 8,jessie,debian jessie ]
+  - [ debian,debian 9,stretch,debian stretch ]
+  - [ fedora 27 ]
+  - [ fedora 28 ]
+  - [ fedora,fedora 29 ]
+  - [ gentoo ]
+  - [ opensuse,opensuse leap 42.3 ]
+  - [ opensuse,opensuse leap 15.0 ]
+  - [ slackware ]
+  - [ ubuntu 14.04 lts,trusty,trusty tahr,ubuntu trusty,ubuntu trust tahr ]
+  - [ ubuntu 16.04 lts,xenial,ubuntu xenial xerus,xenial xerus ]
+  - [ ubuntu,ubuntu 18.04 lts,ubuntu lts,ubuntu bionic beaver,bionic beaver ]
+  - [ ubuntu,ubuntu 18.10,ubuntu latest,latest ubuntu ]

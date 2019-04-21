@@ -1,0 +1,16 @@
+{
+  "intents": {
+    "linode/backup": {
+      "url": "/docs/platform/disk-images/linode-backup-service/",
+      "entities": {
+        "action": "/docs/platform/disk-images/linode-backup-service/#enable-the-backup-service",
+
+      }
+
+    },
+
+    "linode/create": {
+
+    },
+  }
+}

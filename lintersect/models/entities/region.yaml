@@ -1,0 +1,15 @@
+---
+type: entity
+name: linode/region
+automatically_extensible: false
+use_synonyms: true
+matching_strictness: 1.0
+values:
+  - [ us-central, us central,dallas,texas ]
+  - [ us-west,fremont,california,us west ]
+  - [ us-southeast,atlanta,us southeast ]
+  - [ us-east,us east,newark ]
+  - [ eu-west,london,eu west,europe west ]
+  - [ ap-south,asia pacific south,south asia,singapore ]
+  - [ eu-central,eu central, europe central,central europe,frankfurt,germany ]
+  - [ ap-northeast,asia pacific northeast, asia pacific north east,japan,asia ]

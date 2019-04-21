@@ -1,0 +1,39 @@
+<!-- Lets render the "layout" template -->
+{% extends 'layout.html' %}
+
+<!-- everything wrapped in this "block" will be loaded into the "layout" template -->
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/searchbar.css') }}">
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#linodesearchbar').bind('keypress', function(e) {
+      $(".linode-item").remove();
+
+      var searchquery = $("#linodesearchbar").val();
+
+      $.ajax({
+        type: 'POST',
+        url: "/searchit",
+        contentType: 'application/json',
+        data: JSON.stringify(searchquery),
+        success: function(result) {
+          var data = jQuery.parseJSON(result)
+          for (var link in data) {
+            $(".linode-list").append('<a href="#" class="linode-item list-group-item list-group-item-action">' + link + '</a>');
+
+          }
+        }
+      });
+
+    });
+  });
+</script>
+
+<div class="container inner cover">
+  <h1 class="text-center">Linode Search</h1>
+  <input id="linodesearchbar" type="text" class="form-control form-control-lg" placeholder="Linode Search" autofocus>
+  <div class="linode-list list-group list-group-flush">
+  </div>
+</div>
+{% endblock %}

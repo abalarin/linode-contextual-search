@@ -1,0 +1,255 @@
+---
+type: intent
+name: linode/summary
+slots:
+  - name: linode
+    entity: linode/label
+utterances:
+  - show linode [linode](a-linode)
+  - go to [linode](webserver)
+  - go to linode [linode](webserver)
+  - graphs for [linode](db1)
+  - '[linode](nagios) stats'
+  - '[linode](nagios) graphs'
+  - '[linode](nagios) network usage'
+  - '[linode](nagios) details'
+  - '[linode](nagios) view'
+
+---
+type: intent
+name: linode/create
+slots:
+  - name: type
+    entity: linode/type
+  - name: region
+    entity: linode/region
+  - name: distro
+    entity: linode/distro
+  - name: label
+    entity: linode/label
+  - name: backups
+    entity: linode/backups#status
+utterances:
+  - Create [type](2GB) Linode in [region](dallas)
+  - Create [type](24GB) Linode in [region](newark)
+  - Create a Linode [type](4gb) in [region](newark) [backups](with backups enabled)
+  - Create a [type](4gb) linode in [region](tokyo) named [label](foo)
+  - Create a [type](nanode) in [region](us east) called [label](app-server)
+  - Create an Linode [type](300gb) named [label](bla) in [region](tokyo) [label](with backups enabled)
+  - Deploy an [type](8gb) linode in [region](tokyo) [backups](with backups) named [label](db1)
+  - deploy [type](nanode) labelled [label](foo) to [region](tokyo) [backups](with backups)
+  - deploy a [type](nanode) to [region](europe central) named [label](app-server)
+  - create [label](blog) with [type](2gb) of ram in [region](newark)
+  - deploy linode [label](example) to [region](atlanta) with [type](2gb) of ram and [backups](backups enabled)
+  - new [type](nanode) in [region](newark) [backups](with backups)
+  - new [type](2gb) linode in [region](tokyo) named [label](foo)
+  - new linode [label](foo) near [region](newark) with [type](2gb) ram
+  - new linode [label](foo) with [distro](centos)
+  - create [type](nanode) [distro](stretch) in [region](newark)
+  - create linode [type](8gb) using [distro](jessie)
+  - create [distro](stretch) linode [type](16gb)
+
+
+---
+type: intent
+name: linode/power
+slots:
+  - name: linode
+    entity: linode/label
+  - name: action
+    entity: linode/power
+utterances:
+  - '[action](power off) [linode](foo)'
+  - '[action](turn off) linode [linode](db1)'
+  - '[action](power down) this linode'
+  - '[action](boot) [linode](app-server)'
+  - '[action](restart) [linode](app-server)'
+  - '[action](reboot) [linode](app-server)'
+
+---
+type: intent
+name: linode/backup
+slots:
+  - name: backupStatus
+    entity: linode/backup#status
+  - name: action
+    entity: linode/backup#action
+  - name: linode
+    entity: linode/label
+utterances:
+  - '[backupStatus](enable backups) for [linode](foo)'
+  - '[backupStatus](disable backups) for [linode](foo)'
+  - '[backupStatus](enable backups) on [linode](foo)'
+  - '[backupStatus](enable backups) on linode [linode](foo)'
+  - '[backupStatus](disable backups) on linode named [linode](foo)'
+  - '[backupStatus](no backups) for linode labelled [linode](bar)'
+  - 'take a [action](snapshot) of [linode](foo)'
+  - 'new [action](snapshot) of [linode](db1)'
+  - '[action](clear snapshot) of [linode](foo)'
+  - '[action](restore backup) of [linode](foo)'
+  - 'backup schedule for [linode](foo)'
+  - 'show backup schedule for [linode](foo)'
+  - '[backupStatus](enabled backups)'
+  - 'take [action](snapshot)'
+
+---
+type: intent
+name: linode/rescue
+slots:
+  - name: linode
+    entity: linode/label
+utterances:
+  - rescue linode [linode](foo)
+  - rescue [linode](foo)
+  - rescue this linode
+  - reboot in rescue mode
+  - reboot [linode](app-server) in rescue mode
+  - restart [linode](db1) in rescue mode
+
+---
+type: intent
+name: linode/reset-password
+slots:
+  - name: linode
+    entity: linode/label
+utterances:
+  - reset root password for [linode](foo)
+  - '[linode](db1) reset password'
+  - forgot password for [linode](foo)
+  - cant log into [linode](db2)
+  - locked out of [linode](my-app-server-123)
+
+---
+type: intent
+name: linode/rebuild
+slots:
+  - name: linode
+    entity: linode/label
+  - name: distro
+    entity: linode/distro
+  - name: image
+    entity: linode/image/label
+utterances:
+  - rebuild [linode](foo) with [distro](centos)
+  - recreate [linode](foo) using [distro](debian)
+  - rebuild this linode with [distro](coreos)
+  - rebuild [linode](foo) with [image](test disk)
+  - rebuild with [image](my custom image)
+  - recreate using [image](my custom image)
+  - rebuild from image [image](lol)
+
+---
+type: intent
+name: linode/rename
+slots:
+  - name: linode
+    entity: linode/label
+  - name: newLabel
+    entity: linode/label
+utterances:
+  - rename [linode](foo) to [newLabel](bar)
+  - rename to [newLabel](foo)
+  - change label to [newLabel](foo)
+  - set label to [newLabel](foo)
+  - set name to [newLabel](bar)
+  - change name to [newLabel](bar)
+  - set label of [linode](foo) to [newLabel](bar)
+
+---
+type: intent
+name: linode/networking
+slots:
+  - name: linode
+    entity: linode/label
+utterances:
+  - '[linode](my-linode) networking'
+  - 'show network settings for [linode](foo)'
+  - 'get network settings for [linode](foo)'
+  - 'show ip of [linode](foo)'
+  - 'what is the ip of [linode](foo)?'
+  - 'what is the ip of linode [linode](foo)?'
+  - '[linode](foo) ip settings'
+  - '[linode](foo) ip address'
+  - '[linode](foo) network settings'
+  - '[linode](foo) network configuration'
+  - '[linode](foo) ssh'
+  - 'ssh into [linode](bar)'
+  - 'reverse dns for [linode](foo)'
+  - 'rdns for [linode](foo)'
+  - 'rdns of [linode](foo)'
+  - 'reverse dns of [linode](foo)'
+  - '[linode](foo) reverse dns settings'
+  - 'add ip address to [linode](foo)'
+  - 'add private ip to [linode](foo)'
+  - 'add ipv6 to [linode](foo)'
+  - 'get dns resolvers of [linode](foo)'
+  - 'show dns resolvers for [linode](foo)'
+  - 'enable ip failover on [linode](foo)'
+  - 'ip failover on [linode](foo)'
+  - '[linode](foo) ip failover'
+  - 'get ips for [linode](foo)'
+  - 'get ips of [linode](foo)'
+  - 'show ips for [linode](foo)'
+  - '[linode](foo) show ips'
+  - '[linode](foo) get ips'
+  - '[linode](foo) list ips'
+
+---
+type: intent
+name: linode/resize
+slots:
+  - name: linode
+    entity: linode/label
+  - name: type
+    entity: linode/type
+utterances:
+  - 'resize [linode](foo) to [type](2gb)'
+  - 'change [linode](foo) to [type](4gb)'
+  - '[linode](foo) resize to [type](4gb)'
+  - '[linode](foo) change size to [type](4gb)'
+
+---
+type: intent
+name: linode/settings
+slots:
+  - name: linode
+    entity: linode/label
+utterances:
+  - 'advanced settings for [linode](foo)'
+  - 'show advanced settings for [linode](foo)'
+  - 'show settings for [linode](foo)'
+  - 'watchdog settings for [linode](foo)'
+  - '[linode](foo) watchdog settings'
+  - '[linode](foo) settings'
+  - '[linode](bar) notifications'
+  - 'notification settings for [linode](foo)'
+
+---
+type: intent
+name: linode/delete
+slots:
+  - name: linode
+    entity: linode/label
+utterances:
+  - delete linode [linode](linode1)
+  - destroy linode [linode](app-server)
+  - delete [linode](my-linode)
+
+---
+type: intent
+name: linode/console
+slots:
+  - name: linode
+    entity: linode/label
+utterances:
+  - '[linode](server) console'
+  - '[linode](server) lish'
+  - '[linode](server) glish'
+  - open lish for [linode](db3)
+  - open glish for [linode](db3)
+  - open console for [linode](db23)
+  - glish
+  - console
+  - lish
+
+

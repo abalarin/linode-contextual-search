@@ -1,0 +1,6 @@
+---
+type: entity
+name: linode/label
+automatically_extensible: true
+use_synonyms: true
+matching_strictness: 1.0

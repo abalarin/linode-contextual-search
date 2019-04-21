@@ -1,0 +1,66 @@
+---
+type: intent
+name: volume/create
+slots:
+  - name: label
+    entity: volume/label
+  - name: size
+    entity: snips/number
+  - name: region
+    entity: linode/region
+utterances:
+  - create volume [size](10) [label](foo) in [region](dallas)
+  - new [size](1100) volume in [region](dallas) labelled [label](my-volume)
+  - create [size](20) volume [region](newark) named [label](foo1)
+  - create volume [label](bar) in [region](eu east)
+
+---
+type: intent
+name: volume/attach
+slots:
+  - name: volume
+    entity: volume/label
+  - name: linode
+    entity: linode/label
+utterances:
+  - attach [volume](my-volume-123) to [linode](bar)
+  - attach this volume to [linode](bar)
+
+---
+type: intent
+name: volume/detach
+slots:
+  - name: volume
+    entity: volume/label
+  - name: linode
+    entity: linode/label
+utterances:
+  - detach volume from [linode](bar)
+  - detach volume [volume](db1)
+  - detach [volume](this-is-a-volume)
+
+---
+type: intent
+name: volume/clone
+slots:
+  - name: volume
+    entity: volume/label
+  - name: newLabel
+    entity: volume/label
+utterances:
+  - clone volume [volume](volume1) to [newLabel](volume2)
+  - create volume [newLabel](vol2) from [volume](original-volume)
+
+---
+type: intent
+name: volume/delete
+slots:
+  - name: volume
+    entity: volume/label
+utterances:
+  - delete volume [volume](volume1)
+  - destroy volume [volume](vol2)
+  - delete [volume](volume1)
+
+
+

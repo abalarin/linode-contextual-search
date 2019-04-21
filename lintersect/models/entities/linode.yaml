@@ -1,0 +1,74 @@
+---
+type: entity
+name: linode/backup#status
+automatically_extensible: false
+use_synonyms: true
+matching_strictness: 1.0
+values:
+  - [ enabled, enable backups, with backups, backups , backups enabled]
+  - [ disabled, disable backups, without backups, no backups, backups disabled ]
+
+---
+type: entity
+name: linode/backup#action
+automatically_extensible: false
+use_synonyms: true
+matching_strictness: 1.0
+values:
+  - [ take snapshot,new snapshot,create snapshot,snapshot ]
+  - [ restore,restore backup ]
+  - [ remove snapshot,clear snapshot,destroy snapshot ]
+
+---
+type: entity
+name: linode/label
+automatically_extensible: true
+use_synonyms: true
+matching_strictness: 1.0
+
+---
+type: entity
+name: linode/image/label
+automatically_extensible: true
+use_synonyms: true
+matching_strictness: 1.0
+
+---
+type: entity
+name: linode/power
+automatically_extensible: false
+use_synonyms: true
+matching_strictness: 1.0
+values:
+  - [ reboot, rebooted, restart ]
+  - [ power off powered off, turn off, power down, turn down, shut off ]
+  - [ power on, turn on, powered on, wake up, boot ]
+
+---
+type: entity
+name: linode/type
+automatically_extensible: false
+use_synonyms: true
+matching_strictness: 1.0
+values:
+  - [ 1 GB,1gb ]
+  - [ 2 GB,2gb,nanode ]
+  - [ 4 GB,4gb ]
+  - [ 8 GB,8gb ]
+  - [ 16 GB,16gb ]
+  - [ 32 GB,32gb ]
+  - [ 64 GB,64gb ]
+  - [ 96 GB,96gb ]
+  - [ 128 GB,128gb ]
+  - [ 192 GB,192gb ]
+  - [ 4 GB,4gb ]
+  - [ 8 GB,8gb ]
+  - [ 16 GB,16gb ]
+  - [ 32 GB,32gb ]
+  - [ 64 GB,64gb ]
+  - [ 96 GB,96gb ]
+  - [ 24 GB,24gb ]
+  - [ 48 GB,48gb ]
+  - [ 90 GB,90gb ]
+  - [ 150 GB,150gb ]
+  - [ 300 GB,300gb ]
